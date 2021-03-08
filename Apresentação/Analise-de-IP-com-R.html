@@ -139,7 +139,7 @@ O **editor** e o **console** são os dois principais painéis do RStudio. Passar
 ---
 ## R Básico
 
-### **Objetos, dataframes, matrizes e funções:**
+### **Objetos, dataframes, matrizes, vetores e funções:**
 
 **Objeto**: nome que guarda um determinado valor (Atenção, o R é *case sensitive* - diferencia maísculas de minísculas)
 
@@ -162,11 +162,18 @@ A
 ```
 ## [1] 4
 ```
-
 ---
 ## R Básico
 
-### **Objetos, dataframes, matrizes e funções:**
+### **Objetos, dataframes, matrizes, vetores e funções:**
+
+Tipos de objetos:
+
+&lt;img src="img/objetos1.png" width="90%" style="display: block; margin: auto;" /&gt;
+---
+## R Básico
+
+### **Objetos, dataframes, matrizes, vetores e funções:**
 
 **Dataframe**: objetos bidimensionais (linhas e colunas) que guardam um conjunto de dados de **diferentes tipos**, a exemplo de uma base de dados.
 
@@ -196,7 +203,7 @@ head(iris, 5)
 ---
 ## R Básico
 
-### **Objetos, dataframes, matrizes e funções:**
+### **Objetos, dataframes, matrizes, vetores e funções:**
 
 **Matrizes**: objetos bidimensionais (linhas e colunas) que guardam um conjunto de dados **iguais**.
 
@@ -222,6 +229,65 @@ m
 ## [3,]    3    2    1
 ```
 ---
+## R Básico
+
+### **Objetos, dataframes, matrizes, vetores e funções:**
+
+**Vetores**: vetores no R são apenas conjuntos indexados de valores. Para criá-los, basta colocar os valores separados por vírgulas dentro de um c()..
+
+
+```r
+vetor1 &lt;- c(1,2,3,4)
+vetor2 &lt;- c("b", "b", "m", "p")
+
+vetor1
+```
+
+```
+## [1] 1 2 3 4
+```
+
+```r
+vetor2
+```
+
+```
+## [1] "b" "b" "m" "p"
+```
+---
+## R Básico
+
+### **Objetos, dataframes, matrizes e funções:**
+
+**Funções**: funções no R são nomes que guardam um código de R. sempre que você rodar uma função, o código que ela guarda será executado e um resultado nos será devolvido.
+
+
+```r
+sum(1,2)
+```
+
+```
+## [1] 3
+```
+
+```r
+# atenção não confundir 
+sum(2,2)
+```
+
+```
+## [1] 4
+```
+
+```r
+#com 
+soma &lt;- 2+2
+soma
+```
+
+```
+## [1] 4
+```
     </textarea>
 <style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
 <script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>

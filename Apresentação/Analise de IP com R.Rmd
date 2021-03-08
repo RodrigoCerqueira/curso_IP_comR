@@ -135,7 +135,7 @@ O **editor** e o **console** são os dois principais painéis do RStudio. Passar
 ---
 ## R Básico
 
-### **Objetos, dataframes, matrizes e funções:**
+### **Objetos, dataframes, matrizes, vetores e funções:**
 
 **Objeto**: nome que guarda um determinado valor (Atenção, o R é *case sensitive* - diferencia maísculas de minísculas)
 
@@ -146,11 +146,20 @@ A <- 4
 a
 A
 ``` 
-
 ---
 ## R Básico
 
-### **Objetos, dataframes, matrizes e funções:**
+### **Objetos, dataframes, matrizes, vetores e funções:**
+
+Tipos de objetos:
+
+```{r echo=FALSE, out.width='90%', fig.align="center", fig.cap="" }
+knitr::include_graphics("img/objetos1.png")
+```
+---
+## R Básico
+
+### **Objetos, dataframes, matrizes, vetores e funções:**
 
 **Dataframe**: objetos bidimensionais (linhas e colunas) que guardam um conjunto de dados de **diferentes tipos**, a exemplo de uma base de dados.
 
@@ -164,7 +173,7 @@ head(iris, 5)
 ---
 ## R Básico
 
-### **Objetos, dataframes, matrizes e funções:**
+### **Objetos, dataframes, matrizes, vetores e funções:**
 
 **Matrizes**: objetos bidimensionais (linhas e colunas) que guardam um conjunto de dados **iguais**.
 
@@ -175,3 +184,32 @@ m <- matrix(data = c(1,2,3,4), nrow = 3, ncol = 3)
 m
 ```
 ---
+## R Básico
+
+### **Objetos, dataframes, matrizes, vetores e funções:**
+
+**Vetores**: vetores no R são apenas conjuntos indexados de valores. Para criá-los, basta colocar os valores separados por vírgulas dentro de um c()..
+
+```{r echo=TRUE, eval=TRUE}
+vetor1 <- c(1,2,3,4)
+vetor2 <- c("b", "b", "m", "p")
+
+vetor1
+vetor2
+```
+---
+## R Básico
+
+### **Objetos, dataframes, matrizes e funções:**
+
+**Funções**: funções no R são nomes que guardam um código de R. sempre que você rodar uma função, o código que ela guarda será executado e um resultado nos será devolvido.
+
+```{r echo=TRUE, eval=TRUE}
+sum(1,2)
+
+# atenção não confundir 
+sum(2,2)
+#com 
+soma <- 2+2
+soma
+```
